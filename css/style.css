@@ -2,6 +2,7 @@
   box-sizing:border-box;
   margin:0;
   padding:0;
+  font-family:Helvetica;
 }
 
 .main-nav {
@@ -24,6 +25,16 @@
   text-align: center;
 }
 
+.main-nav a {
+  text-decoration: none;   /*add*/
+  color:black;
+}
+
+.main-nav-list .brandList {
+  text-decoration: none;   /*add*/
+  color:black;
+}
+
 .hamburger {
   display:none;
 }
@@ -41,6 +52,8 @@
     width: 50px;
     height: 50px;
     position:relative;
+    outline:none;
+    cursor:pointer;
   }
 
   .hamburger div {
