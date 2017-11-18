@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Emilys+Candy');
+
 * {
   box-sizing:border-box;
   margin:0;
   padding:0;
-  font-family:Helvetica;
+  font-family: 'Emilys Candy', cursive;
 }
 
 .main-nav {
@@ -18,6 +20,11 @@
   display:flex;
   list-style-type: none;
   margin-left:auto;
+
+}
+
+.main-nav {
+
 }
 
 .main-nav-list li {
@@ -27,7 +34,21 @@
 
 .main-nav a {
   text-decoration: none;   /*add*/
-  color:black;
+  color:white;
+
+}
+
+.main-nav a:hover{
+  transform: rotate(7deg);
+  /*transition: 0.9s;*/
+  /*color:yellow;*/
+}
+
+.main-nav-list li a:hover{
+  transform: rotate(7deg);
+  /*transition: 0.9s;*/
+  /*color:yellow;*/
+  font-weight:bold;
 }
 
 .main-nav-list .brandList {
@@ -106,3 +127,53 @@
     max-height: 500px;
   }
 }/* ======closes media query========*/
+
+.header-bg{
+  background:url("../images/candy.jpeg");
+  width:100%;
+  height:100vh;
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+
+.main-section{
+  padding:15rem;
+
+}
+.main-section:hover{
+  transform: rotate(4deg);
+  transition:2s;
+}
+
+@media (max-width: 600px){
+  .main-section{
+    padding:4rem;
+    font-size: 0.8rem;
+  }
+}
+
+.btn {
+  text-align: center;
+  padding:2rem;
+}
+
+.btn button{
+  padding:1.2rem;
+  border:none;
+  background:black;
+  color:white;
+  cursor:pointer;
+  box-shadow: 1px 1px 5px black;
+  outline:none;
+}
+
+.btn button:hover{
+  transform: translate(-5px,-5px);
+  box-shadow: 10px 10px 20px black;
+}
+
+.btn button:active{
+  transform: translate(-1px,-1px);
+  box-shadow: 2px 2px 2px black;
+
+}
